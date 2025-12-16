@@ -1,0 +1,11 @@
+# Ignorer le dossier Visual Studio local
+.vs/
+
+# Fichiers de débogage et de construction
+*.obj
+*.exe
+*.pdb
+*.ilk
+
+# Fichiers spécifiques aux utilisateurs (ne pas partager)
+*.user
