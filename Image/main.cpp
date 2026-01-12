@@ -59,36 +59,6 @@ int main()
     img.at(1, 1, 0) = 200;
     std::cout << "\n";
 
-	
-    std::cout << "Image : " << img << std::endl;
-
-    Image test1 = img < 128;
-    std::cout << "Test < 128: " << test1 << std::endl;
-    std::cout << "Res (50): " << (int)test1.at(0, 0, 0) << std::endl;
-    std::cout << "Res (200): " << (int)test1.at(1, 1, 0) << std::endl;
-
-    Image test2 = img <= 50;
-    std::cout << "Test <= 50: " << test2 << std::endl;
-    std::cout << "Res (50): " << (int)test2.at(0, 0, 0) << std::endl;
-
-    Image test3 = img > 128;
-    std::cout << "Test > 128: " << test3 << std::endl;
-    std::cout << "Res (200): " << (int)test3.at(1, 1, 0) << std::endl;
-
-    Image test4 = img >= 200;
-    std::cout << "Test >= 200: " << test4 << std::endl;
-    std::cout << "Res (200): " << (int)test4.at(1, 1, 0) << std::endl;
-
-    Image test5 = img == 100;
-    std::cout << "Test == 100: " << test5 << std::endl;
-    std::cout << "Res (100): " << (int)test5.at(0, 1, 0) << std::endl;
-    std::cout << "Res (50): " << (int)test5.at(0, 0, 0) << std::endl;
-
-    Image test6 = img != 100;
-    std::cout << "Test != 100: " << test6 << std::endl;
-    std::cout << "Res (100): " << (int)test6.at(0, 1, 0) << std::endl;
-    std::cout << "Res (50): " << (int)test6.at(0, 0, 0) << std::endl;
-    
 
     Image original;
     if (original.load("6e4tzycxnzod1.png"))

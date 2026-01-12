@@ -1,0 +1,5 @@
+services:
+  image-app:
+    build: .
+    container_name: image_app_container
+    restart: always
